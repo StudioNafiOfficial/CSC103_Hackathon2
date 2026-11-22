@@ -44,47 +44,47 @@ int main() {
     }
 
     // Specific hand-picked card positions: {worldX, worldY, radius, text}
-    vector<Card> cards = {
+vector<Card> cards = {
         {720.0f,  220.0f, 34.0f, "A"},
-        {540.0f,  310.0f, 30.0f, "A"},
-        {930.0f,  390.0f, 40.0f, "A"},
-        {650.0f,  480.0f, 28.0f, "A"},
-        {860.0f,  560.0f, 36.0f, "A"},
-        {480.0f,  650.0f, 32.0f, "A"},
-        {980.0f,  740.0f, 38.0f, "A"},
-        {720.0f,  830.0f, 42.0f, "A"},
-        {560.0f,  920.0f, 30.0f, "A"},
-        {890.0f, 1010.0f, 35.0f, "A"},
-        {640.0f, 1110.0f, 32.0f, "A"},
-        {940.0f, 1200.0f, 38.0f, "A"},
-        {510.0f, 1290.0f, 28.0f, "A"},
-        {760.0f, 1380.0f, 40.0f, "A"},
-        {960.0f, 1480.0f, 34.0f, "A"},
-        {600.0f, 1570.0f, 36.0f, "A"},
-        {830.0f, 1670.0f, 30.0f, "A"},
-        {470.0f, 1760.0f, 38.0f, "A"},
-        {720.0f, 1860.0f, 42.0f, "A"},
-        {950.0f, 1950.0f, 32.0f, "A"},
-        {580.0f, 2050.0f, 34.0f, "A"},
-        {840.0f, 2140.0f, 36.0f, "A"},
-        {670.0f, 2240.0f, 28.0f, "A"},
-        {920.0f, 2340.0f, 40.0f, "A"},
-        {500.0f, 2440.0f, 35.0f, "A"},
-        {750.0f, 2540.0f, 32.0f, "A"},
-        {970.0f, 2640.0f, 38.0f, "A"},
-        {610.0f, 2740.0f, 30.0f, "A"},
-        {860.0f, 2840.0f, 36.0f, "A"},
-        {530.0f, 2940.0f, 34.0f, "A"},
-        {720.0f, 3050.0f, 42.0f, "A"},
-        {940.0f, 3160.0f, 32.0f, "A"},
-        {620.0f, 3270.0f, 38.0f, "A"},
-        {870.0f, 3380.0f, 30.0f, "A"},
-        {490.0f, 3490.0f, 36.0f, "A"},
-        {760.0f, 3600.0f, 34.0f, "A"},
-        {960.0f, 3710.0f, 40.0f, "A"},
-        {590.0f, 3820.0f, 28.0f, "A"},
-        {820.0f, 3930.0f, 35.0f, "A"},
-        {720.0f, 4050.0f, 38.0f, "A"}
+        {540.0f,  300.0f, 30.0f, "A"},
+        {930.0f,  370.0f, 40.0f, "A"},
+        {650.0f,  445.0f, 28.0f, "A"},
+        {860.0f,  520.0f, 36.0f, "A"},
+        {480.0f,  595.0f, 32.0f, "A"},
+        {980.0f,  670.0f, 38.0f, "A"},
+        {720.0f,  745.0f, 42.0f, "A"},
+        {560.0f,  820.0f, 30.0f, "A"},
+        {890.0f,  895.0f, 35.0f, "A"},
+        {640.0f,  970.0f, 32.0f, "A"},
+        {940.0f, 1045.0f, 38.0f, "A"},
+        {510.0f, 1120.0f, 28.0f, "A"},
+        {760.0f, 1195.0f, 40.0f, "A"},
+        {960.0f, 1270.0f, 34.0f, "A"},
+        {600.0f, 1345.0f, 36.0f, "A"},
+        {830.0f, 1420.0f, 30.0f, "A"},
+        {470.0f, 1495.0f, 38.0f, "A"},
+        {720.0f, 1570.0f, 42.0f, "A"},
+        {950.0f, 1645.0f, 32.0f, "A"},
+        {580.0f, 1720.0f, 34.0f, "A"},
+        {840.0f, 1795.0f, 36.0f, "A"},
+        {670.0f, 1870.0f, 28.0f, "A"},
+        {920.0f, 1945.0f, 40.0f, "A"},
+        {500.0f, 2020.0f, 35.0f, "A"},
+        {750.0f, 2095.0f, 32.0f, "A"},
+        {970.0f, 2170.0f, 38.0f, "A"},
+        {610.0f, 2245.0f, 30.0f, "A"},
+        {860.0f, 2320.0f, 36.0f, "A"},
+        {530.0f, 2395.0f, 34.0f, "A"},
+        {720.0f, 2465.0f, 42.0f, "A"},
+        {940.0f, 2515.0f, 32.0f, "A"},
+        {620.0f, 2560.0f, 38.0f, "A"},
+        {870.0f, 2595.0f, 30.0f, "A"},
+        {490.0f, 2625.0f, 36.0f, "A"},
+        {760.0f, 2650.0f, 34.0f, "A"},
+        {960.0f, 2740.0f, 40.0f, "A"},
+        {590.0f, 2830.0f, 28.0f, "A"},
+        {820.0f, 2920.0f, 35.0f, "A"},
+        {720.0f, 3010.0f, 38.0f, "A"}
     };
 
     // set up our camera
@@ -138,7 +138,14 @@ int main() {
             BeginMode2D(camera);
                 for (const Card& card : cards) { // for every card
                     DrawCircleV({card.worldX, card.worldY}, card.radius, WHITE); // draw them where they should be
-                    DrawText(card.text.c_str(), card.worldX, card.worldY, 14, BLACK);
+
+                    int circleTextFontSize = clamp(static_cast<int>(card.radius * 0.45f), 10, 24); // between 10 and 24 so its not abnormally small or large
+                    int circleTextWidth = MeasureText(card.text.c_str(), circleTextFontSize);
+
+                    int circleTextX = static_cast<int>(card.worldX) - (circleTextWidth/2);
+                    int circleTextY = static_cast<int>(card.worldY) - (circleTextFontSize/2);
+
+                    DrawText(card.text.c_str(), circleTextX, circleTextY, circleTextFontSize, BLACK);
                 }
             EndMode2D();
 
