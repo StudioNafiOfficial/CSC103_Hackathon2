@@ -45,46 +45,46 @@ int main() {
 
     // Specific hand-picked card positions: {worldX, worldY, radius, text}
 vector<Card> cards = {
-        {720.0f,  220.0f, 34.0f, "A"},
-        {540.0f,  300.0f, 30.0f, "A"},
-        {930.0f,  370.0f, 40.0f, "A"},
-        {650.0f,  445.0f, 28.0f, "A"},
-        {860.0f,  520.0f, 36.0f, "A"},
-        {480.0f,  595.0f, 32.0f, "A"},
-        {980.0f,  670.0f, 38.0f, "A"},
-        {720.0f,  745.0f, 42.0f, "A"},
-        {560.0f,  820.0f, 30.0f, "A"},
-        {890.0f,  895.0f, 35.0f, "A"},
-        {640.0f,  970.0f, 32.0f, "A"},
-        {940.0f, 1045.0f, 38.0f, "A"},
-        {510.0f, 1120.0f, 28.0f, "A"},
-        {760.0f, 1195.0f, 40.0f, "A"},
-        {960.0f, 1270.0f, 34.0f, "A"},
-        {600.0f, 1345.0f, 36.0f, "A"},
-        {830.0f, 1420.0f, 30.0f, "A"},
-        {470.0f, 1495.0f, 38.0f, "A"},
-        {720.0f, 1570.0f, 42.0f, "A"},
-        {950.0f, 1645.0f, 32.0f, "A"},
-        {580.0f, 1720.0f, 34.0f, "A"},
-        {840.0f, 1795.0f, 36.0f, "A"},
-        {670.0f, 1870.0f, 28.0f, "A"},
-        {920.0f, 1945.0f, 40.0f, "A"},
-        {500.0f, 2020.0f, 35.0f, "A"},
-        {750.0f, 2095.0f, 32.0f, "A"},
-        {970.0f, 2170.0f, 38.0f, "A"},
-        {610.0f, 2245.0f, 30.0f, "A"},
-        {860.0f, 2320.0f, 36.0f, "A"},
-        {530.0f, 2395.0f, 34.0f, "A"},
-        {720.0f, 2465.0f, 42.0f, "A"},
-        {940.0f, 2515.0f, 32.0f, "A"},
-        {620.0f, 2560.0f, 38.0f, "A"},
-        {870.0f, 2595.0f, 30.0f, "A"},
-        {490.0f, 2625.0f, 36.0f, "A"},
-        {760.0f, 2650.0f, 34.0f, "A"},
-        {960.0f, 2740.0f, 40.0f, "A"},
-        {590.0f, 2830.0f, 28.0f, "A"},
-        {820.0f, 2920.0f, 35.0f, "A"},
-        {720.0f, 3010.0f, 38.0f, "A"}
+        {720.0f,  220.0f, 34.0f, "A", "Pretend this is a unique description.", false},
+        {540.0f,  300.0f, 30.0f, "A", "Pretend this is a unique description.", false},
+        {930.0f,  370.0f, 40.0f, "A", "Pretend this is a unique description.", false},
+        {650.0f,  445.0f, 28.0f, "A", "Pretend this is a unique description.", false},
+        {860.0f,  520.0f, 36.0f, "A", "Pretend this is a unique description.", false},
+        {480.0f,  595.0f, 32.0f, "A", "Pretend this is a unique description.", false},
+        {980.0f,  670.0f, 38.0f, "A", "Pretend this is a unique description.", false},
+        {720.0f,  745.0f, 42.0f, "A", "Pretend this is a unique description.", false},
+        {560.0f,  820.0f, 30.0f, "A", "Pretend this is a unique description.", false},
+        {890.0f,  895.0f, 35.0f, "A", "Pretend this is a unique description.", false},
+        {640.0f,  970.0f, 32.0f, "A", "Pretend this is a unique description.", false},
+        {940.0f, 1045.0f, 38.0f, "A", "Pretend this is a unique description.", false},
+        {510.0f, 1120.0f, 28.0f, "A", "Pretend this is a unique description.", false},
+        {760.0f, 1195.0f, 40.0f, "A", "Pretend this is a unique description.", false},
+        {960.0f, 1270.0f, 34.0f, "A", "Pretend this is a unique description.", false},
+        {600.0f, 1345.0f, 36.0f, "A", "Pretend this is a unique description.", false},
+        {830.0f, 1420.0f, 30.0f, "A", "Pretend this is a unique description.", false},
+        {470.0f, 1495.0f, 38.0f, "A", "Pretend this is a unique description.", false},
+        {720.0f, 1570.0f, 42.0f, "A", "Pretend this is a unique description.", false},
+        {950.0f, 1645.0f, 32.0f, "A", "Pretend this is a unique description.", false},
+        {580.0f, 1720.0f, 34.0f, "A", "Pretend this is a unique description.", false},
+        {840.0f, 1795.0f, 36.0f, "A", "Pretend this is a unique description.", false},
+        {670.0f, 1870.0f, 28.0f, "A", "Pretend this is a unique description.", false},
+        {920.0f, 1945.0f, 40.0f, "A", "Pretend this is a unique description.", false},
+        {500.0f, 2020.0f, 35.0f, "A", "Pretend this is a unique description.", false},
+        {750.0f, 2095.0f, 32.0f, "A", "Pretend this is a unique description.", false},
+        {970.0f, 2170.0f, 38.0f, "A", "Pretend this is a unique description.", false},
+        {610.0f, 2245.0f, 30.0f, "A", "Pretend this is a unique description.", false},
+        {860.0f, 2320.0f, 36.0f, "A", "Pretend this is a unique description.", false},
+        {530.0f, 2395.0f, 34.0f, "A", "Pretend this is a unique description.", false},
+        {720.0f, 2465.0f, 42.0f, "A", "Pretend this is a unique description.", false},
+        {940.0f, 2515.0f, 32.0f, "A", "Pretend this is a unique description.", false},
+        {620.0f, 2560.0f, 38.0f, "A", "Pretend this is a unique description.", false},
+        {870.0f, 2595.0f, 30.0f, "A", "Pretend this is a unique description.", false},
+        {490.0f, 2625.0f, 36.0f, "A", "Pretend this is a unique description.", false},
+        {760.0f, 2650.0f, 34.0f, "A", "Pretend this is a unique description.", false},
+        {960.0f, 2740.0f, 40.0f, "A", "Pretend this is a unique description.", false},
+        {590.0f, 2830.0f, 28.0f, "A", "Pretend this is a unique description.", false},
+        {820.0f, 2920.0f, 35.0f, "A", "Pretend this is a unique description.", false},
+        {720.0f, 3010.0f, 38.0f, "B", "Pretend this is a REALLY unique description.", false}
     };
 
     // set up our camera
@@ -106,6 +106,10 @@ vector<Card> cards = {
     float scrollTargetY = minScrollY;
     const float scrollSpeed = 95.0f;
     const float smoothness = 12.0f;
+
+    Vector2 mousePoint = {0, 0};
+
+    int activeCardIndex = -1; // -1 means no description box is currently shown
 
     while (!WindowShouldClose()) {
         // getting time between each frame
@@ -166,6 +170,35 @@ vector<Card> cards = {
                     int textY = static_cast<int>(screenY) - (fontSize / 2);
 
                     DrawText(label.c_str(), textX, textY, fontSize, Fade(WHITE, 0.92f));
+                }
+            }
+
+            if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                Vector2 mouseWorldPos = GetScreenToWorld2D(GetMousePosition(), camera);
+                bool clickedAnyCard = false;
+
+                // Check top-most drawn cards first if any overlap
+                for (int i = static_cast<int>(cards.size()) - 1; i >= 0; --i) {
+                    if (CheckCollisionPointCircle(mouseWorldPos, {cards[i].worldX, cards[i].worldY}, cards[i].radius)) {
+                        if (activeCardIndex == i) {
+                            activeCardIndex = -1; // Clicking the open card again closes it
+                        } else {
+                            activeCardIndex = i;  // Clicking a different card switches to it
+                        }
+                        clickedAnyCard = true;
+                        break;
+                    }
+                }
+
+                // clicking empty space should also close the box
+                if (!clickedAnyCard) {
+                    activeCardIndex = -1;
+                }
+            }
+
+            for (const Card& card : cards) {
+                if (activeCardIndex >= 0 && activeCardIndex < static_cast<int>(cards.size())) {
+                    cards[activeCardIndex].DisplayDescription(screenWidth, screenHeight);
                 }
             }
 
