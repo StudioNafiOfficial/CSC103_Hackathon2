@@ -44,8 +44,8 @@ int main() {
     }
 
     // Specific hand-picked card positions: {worldX, worldY, radius, text}
-vector<Card> cards = {
-        {720.0f,  220.0f, 34.0f, "A", "Pretend this is a unique description.", false},
+    vector<Card> cards = {
+        {720.0f,  220.0f, 34.0f, "Support Vector Machines", "A Support Vector Machine (SVM) is a supervised machine learning algorithm used mainly for classification and regression. Its primary goal is to find a boundary—called a hyperplane—that separates data classes with the widest possible margin.", false},
         {540.0f,  300.0f, 30.0f, "A", "Pretend this is a unique description.", false},
         {930.0f,  370.0f, 40.0f, "A", "Pretend this is a unique description.", false},
         {650.0f,  445.0f, 28.0f, "A", "Pretend this is a unique description.", false},

@@ -7,7 +7,7 @@ class Card {
         float worldX;
         float worldY;
         float radius;
-        std::string text;
+        std::string text; // i hear its good practice to not use namespaces in header files so im hoping it's true
         std::string description;
         bool showDescription;
 
