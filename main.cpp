@@ -86,6 +86,7 @@ int main() {
         { 765.0f, 2445.0f, 36.0f, "Arithmetic mean", "The arithmetic mean is the familiar average. It became particularly important when astronomers and other scientists needed to combine repeated measurements affected by observational error. To calculate it, add the values and divide by how many there are. For 2, 4, 6, 8, and 100, the mean is 24. Because each value contributes its full amount to the total, a very large or small value can pull the mean away from where most observations lie.", "images/arithmetic_mean.png", false}
     };
 
+    // load in every image
     for (Card& card : cards) {
         if (!card.imageLink.empty()) {
             card.texture = LoadTexture(card.imageLink.c_str());
@@ -125,6 +126,7 @@ int main() {
 
     int activeCardIndex = -1; // -1 means no description box is currently shown
 
+    // input
     string userName;
     cout << "What is your name? ";
     cin >> userName;
@@ -161,6 +163,7 @@ int main() {
             // while the cameras running...
             BeginMode2D(camera);
 
+                // typing out the inputed name in a welcome
                 const int topMargin = 12;
 
                 int screenWidth = GetScreenWidth();
@@ -234,6 +237,7 @@ int main() {
         EndDrawing();
     }
 
+    // unload every card
     for (Card& card : cards) {
         if (card.texture.id != 0) {
             UnloadTexture(card.texture);
