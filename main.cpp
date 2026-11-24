@@ -92,7 +92,7 @@ int main() {
         }
     }
 
-    for (Card& card : cards) {
+    for (Card& card : cards) { // I asked Gemini for help on loading the images because for some reason some of them are failing. Zero luck.
         if (!card.imageLink.empty()) {
             card.texture = LoadTexture(card.imageLink.c_str());
             if (card.texture.id == 0) {
@@ -125,6 +125,12 @@ int main() {
 
     int activeCardIndex = -1; // -1 means no description box is currently shown
 
+    string userName;
+    cout << "What is your name? ";
+    cin >> userName;
+    cout << "\n";
+    string welcome = "Welcome, " + userName + "! ";
+
     while (!WindowShouldClose()) {
         // getting time between each frame
         float dt = GetFrameTime();
@@ -154,6 +160,15 @@ int main() {
 
             // while the cameras running...
             BeginMode2D(camera);
+
+                const int topMargin = 12;
+
+                int screenWidth = GetScreenWidth();
+                int textWidth = MeasureText(welcome.c_str(), 24);
+                int textX = (screenWidth - textWidth) / 2;
+
+                DrawText(welcome.c_str(), textX, topMargin, 24, WHITE);
+
                 for (const Card& card : cards) { // for every card
                     DrawCircleV({card.worldX, card.worldY}, card.radius, WHITE); // draw them where they should be
 
