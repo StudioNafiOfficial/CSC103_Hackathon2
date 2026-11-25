@@ -16,7 +16,7 @@ int main() {
     const int screenHeight = 1080;
 
     // initialize window and set fps
-    InitWindow(screenWidth, screenHeight, "Timeline Scroll - Raylib");
+    InitWindow(screenWidth, screenHeight, "Calculating Empires - Algorithms");
     SetTargetFPS(60);
 
     // milestone years
